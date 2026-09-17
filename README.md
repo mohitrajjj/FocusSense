@@ -2,6 +2,25 @@
 
 Real-time, privacy-first study attention analytics using MediaPipe/OpenCV, an optional trained CNN/LSTM classifier, an interpretable focus engine, and a Flask + SQLite dashboard.
 
+MCA minor project, built with Sameer Patel.
+
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><img src="screenshots/01_focus_monitor.png" width="100%"/><br/><sub><b>Focus monitor</b></sub></td>
+<td width="50%"><img src="screenshots/02_focus_analysis.png" width="100%"/><br/><sub><b>Focus analysis</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/03_student_records.png" width="100%"/><br/><sub><b>Student records</b></sub></td>
+<td width="50%"><img src="screenshots/04_student_history.png" width="100%"/><br/><sub><b>Student history</b></sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshots/05_live_focus_detection.png" width="100%"/><br/><sub><b>Live focus detection</b></sub></td>
+<td width="50%"></td>
+</tr>
+</table>
+
 ## What changed
 - Clean Flask API with session lifecycle and event logging
 - Focus score from gaze, head pose, eye state and face presence
@@ -54,3 +73,7 @@ The camera client processes frames locally and sends derived scores/signals to t
 
 ## Original project materials
 The existing training data, model, PPTs, screenshots and original helper scripts are retained in this release where useful. The live path uses the cleaned 2.0 implementation.
+
+## About me
+
+Mohit Raj, MCA graduate from RV College of Engineering. [GitHub](https://github.com/mohitrajjj) · [LinkedIn](https://linkedin.com/in/mohit-rajj) · [LeetCode](https://leetcode.com/u/vduZBjuexI/)
