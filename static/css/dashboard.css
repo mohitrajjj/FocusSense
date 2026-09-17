@@ -1,0 +1,54 @@
+/* ===============================
+   DASHBOARD PAGE ONLY
+   =============================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 26px;
+    padding: 40px;
+}
+
+/* STUDENT CARD */
+.student-card {
+    background: linear-gradient(145deg, #111827, #1f2937);
+    border-radius: 22px;
+    padding: 26px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-6px);
+}
+
+.student-header {
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #e5e7eb;
+}
+
+/* SCORE CIRCLE */
+.score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.score-circle.green { background: #22c55e; }
+.score-circle.orange { background: #f59e0b; }
+.score-circle.red { background: #ef4444; }
+
+.status-label {
+    font-size: 15px;
+    color: #9ca3af;
+    margin-top: 6px;
+}

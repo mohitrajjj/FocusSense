@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}FocusSense — Analytics{% endblock %}
+{% block heading %}Analytics{% endblock %}
+{% block content %}
+<section class="metrics">
+  <div class="metric"><span>LOOKBACK</span><strong>30 min</strong></div><div class="metric"><span>SEQUENCE</span><strong>30 frames</strong></div><div class="metric"><span>SMOOTHING</span><strong>12 frames</strong></div><div class="metric"><span>SIGNALS</span><strong>4</strong></div>
+</section>
+<div class="chart-grid">
+  <div class="panel"><div class="section-head"><div><h3>Attention timeline</h3><p>Recent focus trajectory from recorded attention samples.</p></div><select class="select" id="studentSelect"><option value="">All students</option></select></div><canvas id="timelineChart"></canvas></div>
+  <div class="panel"><div class="section-head"><div><h3>Current focus</h3><p>Latest score for each connected student.</p></div></div><canvas id="barChart"></canvas></div>
+</div>
+<div class="panel"><div class="section-head"><div><h3>Score composition</h3><p>Interpretable signals used by the FocusEngine.</p></div></div>
+  <div class="signal-bars">
+    <div><span>Gaze <b>35%</b></span><i><em style="width:35%"></em></i></div>
+    <div><span>Head pose <b>25%</b></span><i><em style="width:25%"></em></i></div>
+    <div><span>Eye state <b>20%</b></span><i><em style="width:20%"></em></i></div>
+    <div><span>Face presence <b>20%</b></span><i><em style="width:20%"></em></i></div>
+  </div>
+</div>
+<div class="notice">Scores are estimates derived from webcam signals. They are not a clinical measurement of attention, fatigue or health.</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/analysis.js') }}"></script>{% endblock %}

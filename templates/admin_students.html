@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}FocusSense — Students{% endblock %}{% block heading %}Students{% endblock %}
+{% block content %}
+<div class="section-head"><div><h3>Student records</h3><p>Historical attention samples stored locally in SQLite.</p></div><div class="actions"><a class="button" href="/api/export/csv">Export CSV</a><a class="button secondary" href="/api/export/pdf">Export PDF</a></div></div>
+<div class="panel table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Samples</th><th>Average focus</th><th>Action</th></tr></thead><tbody id="studentTable"></tbody></table></div>
+{% endblock %}{% block scripts %}<script src="{{ url_for('static',filename='js/admin.js') }}"></script>{% endblock %}

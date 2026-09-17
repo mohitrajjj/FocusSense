@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}FocusSense — Student{% endblock %}{% block heading %}Student detail{% endblock %}
+{% block content %}
+<div class="section-head"><div><h3 id="studentTitle">Loading…</h3><p>Recent attention samples and state history.</p></div><a class="text-link" href="/admin/students">← All students</a></div>
+<div class="panel"><canvas id="historyChart"></canvas></div>
+<div class="panel table-wrap"><table><thead><tr><th>Timestamp</th><th>Score</th><th>State</th><th>Confidence</th><th>Session</th></tr></thead><tbody id="historyTable"></tbody></table></div>
+{% endblock %}{% block scripts %}<script>window.STUDENT_ID={{ student_id|tojson }};</script><script src="{{ url_for('static',filename='js/detail.js') }}"></script>{% endblock %}

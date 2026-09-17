@@ -1,0 +1,165 @@
+/* ===============================
+   COMMON THEME (ALL PAGES)
+   =============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+
+
+/* ---------- TOP BAR ---------- */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.nav-links a {
+    color: #cbd5f5;
+    margin-left: 18px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+}
+
+.nav-links a.active {
+    background: rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #94a3b8;
+}
+
+.hero.small h1 {
+    font-size: 28px;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #cbd5f5;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* ---------- PAGE ---------- */
+.page {
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+/* ---------- TABLE ---------- */
+.table-container {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.04);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.modern-table th {
+    background: rgba(255,255,255,0.08);
+    color: #60a5fa;
+}
+
+.modern-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+    background: #2563eb;
+    padding: 6px 14px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.badge.good {
+    background: #22c55e;
+    color: #022c22;
+}
+
+.badge.bad {
+    background: #ef4444;
+    color: #2c0202;
+}
